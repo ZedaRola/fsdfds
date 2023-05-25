@@ -4,7 +4,7 @@
     background-color: rgb(191, 189, 189);
     text-align: center;
     width:50vw;
-    animation: puls3e 1s 3 ease-in-out; ;
+    animation: pulse 1s 3 ease-in-out; ;
     margin-top:15vw;
     margin-left:23vw;
 }
