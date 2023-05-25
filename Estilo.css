@@ -1,0 +1,94 @@
+.Anuncio{
+    border: 0.5px solid;
+    display:flex;
+    background-color: rgb(191, 189, 189);
+    text-align: center;
+    width:50vw;
+    animation: puls3e 1s 3 ease-in-out; ;
+    margin-top:15vw;
+    margin-left:23vw;
+}
+.Anuncio img{
+    width: 20vw;
+    height:20vw;
+    border: 0.5px solid;
+}
+Body{
+    background-color: rgb(127, 207, 230);
+}
+.texto{
+    font-size:2vw;
+    font-family:arial;
+    color:rgb(215, 55, 23);
+    
+}
+.botão{
+    background-color:rgb(191, 189, 189);
+    font-size:3vw;
+    color:rgb(215, 55, 23);
+    animation:botão 2s linear infinite;
+}
+@keyframes botão{
+    0%{
+        color:rgb(105, 22, 5);
+    }
+    25%{
+        color:rgb(215, 55, 23);
+    }
+    50%{
+        color:rgb(105, 22, 5);
+    }
+    75%{
+        color:rgb(215, 55, 23);
+    }
+    100%{
+        color:rgb(105, 22, 5);
+    }
+}
+
+ 
+  @keyframes pulse {
+    0% {
+      transform: scale(0.6);
+
+    }
+    100% {
+      transform: scale(1);
+
+    }
+  }
+  video{
+    display:none;
+  }
+  @media only screen and (max-width:699px)
+  {
+
+    .Anuncio{
+    border: 0.5px solid;
+    display:block;
+    background-color: rgb(191, 189, 189);
+    text-align: center;
+    width:50vw;
+    height: 120vw;
+    animation: psulse 1s 3 ease-in-out; ;
+    margin-top:15vw;
+    margin-left:23vw;
+}
+.Anuncio img{
+    width: 50vw;
+    height:50vw;
+    border: 0.5px solid;
+}
+.texto{
+    font-size:6vw;
+    font-family:arial;
+    color:rgb(215, 55, 23);
+    
+}
+.botão{
+    background-color:rgb(191, 189, 189);
+    font-size:7vw;
+    color:rgb(215, 55, 23);
+    animation:botão 2s linear infinite;
+}
+  }

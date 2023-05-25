@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    
+<div class="Anuncio">
+
+    <img src="https://img2.rule34.us/images/81/fd/81fd6440ee93ac1ae17bf23002f4d073.gif">
+    <div class="texto">
+    <p>Cansado de Bater uma pra Thais Carla?</p>
+    <p>Conheça as MAIS quentes meninas de Moçambique</p>
+    <input class="botão" type="button"  onclick="playVideo()" value="CLIQUE AQUI">
+</div>
+</div>
+
+<script>
+function playVideo(){
+    var elem = document.getElementsByTagName('video')[0];
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      elem.style.display="flex";
+
+    }else if (elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+
+    }else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    }else if (elem.msRequestFullscreen) { 
+      elem.msRequestFullscreen();
+    }else{
+      alert("Full screen not supported");
+    
+      return;
+    }
+    elem.play();
+  }
+</script>
+  
+  <video controls>
+  <source src="video.mp4">
+  </video>
+
+</body>
+</html>
